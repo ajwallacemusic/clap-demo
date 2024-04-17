@@ -1,0 +1,24 @@
+{
+    "mappings": {
+        "properties": {
+            "audio_embedding": {
+                "type": "knn_vector",
+                "dimension": 512,
+                "method": {
+                "name": "hnsw",
+                "space_type": "l2",
+                "engine": "lucene",
+                "parameters": {
+                    "ef_construction": 128,
+                    "m": 24
+                    }
+                }
+            }
+        }
+    },
+    "settings": {
+        "index": {
+            "knn": true
+        }
+    }
+}
