@@ -34,7 +34,7 @@ def get_audiofile():
     for file in os.listdir(indexed_recordings):
         if file.endswith(".wav") or file.endswith(".mp3"):
             audiofiles.append(file)
-    file = st.selectbox("Select an audio file to search against", audiofiles)
+    file = st.selectbox("Select an audio file to search against", audiofiles, key="similar")
     audiofile = f"{INDEXED_RECORDINGS_DIRECTORY}/{file}"
     return audiofile
 

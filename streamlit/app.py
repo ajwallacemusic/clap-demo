@@ -52,12 +52,11 @@ def set_up_audio():
 
     # Enumerate available audio devices
     num_devices = audio.get_device_count()
-    st.write(num_devices)
     devices = [audio.get_device_info_by_index(i) for i in range(num_devices)]
     device_names = [audio.get_device_info_by_index(i)['name'] for i in range(num_devices)]
 
     # Find the index of the desired device by name
-    desired_input_device_name = st.selectbox("Select an input audio device", device_names)
+    desired_input_device_name = st.selectbox("Select an input audio device", device_names, key="input")
     desired_input_device_index = None
     for i, device in enumerate(devices):
         if device['name'] == desired_input_device_name:
@@ -66,7 +65,7 @@ def set_up_audio():
     
 
 
-    desired_output_device_name = st.selectbox("Select an output audio device", device_names)
+    desired_output_device_name = st.selectbox("Select an output audio device", device_names, key="output")
     desired_output_device_index = None
     for i, device in enumerate(devices):
         if device['name'] == desired_output_device_name:
@@ -101,8 +100,6 @@ def set_up_audio():
         st.success("Audio Devices Initialized Succesfully")
         st.write("Input Device: " + input_device['name'])
         st.write("Output Device: " + output_device['name'])
-        st.write(input_device)
-        st.write(output_device['defaultSampleRate'])
         
         st.session_state.audio = audio
         st.session_state.stream = input_stream

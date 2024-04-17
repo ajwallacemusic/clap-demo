@@ -1,8 +1,6 @@
 import streamlit as st
-from transformers import pipeline
-import librosa, os
+import librosa
 from menu import menu
-from pages.record import INDEXED_RECORDINGS_DIRECTORY
 from pages.audio_to_audio_search import get_audiofile
 
 def get_label_with_highest_score(input_list):
@@ -49,7 +47,6 @@ if uploaded_file is not None:
     st.audio(source)
 else:
     source = audiofile
-
 
 if st.button("Classify"):
     label = classify_audio(text1, text2, source)
