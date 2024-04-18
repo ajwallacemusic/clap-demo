@@ -21,7 +21,7 @@ This demo app demonstrates how to implement the CLAP model to perform text to au
         - it's recommended to use a virtual python environment. This project was tested with python version 3.9.6 using `PyEnv` to manage python versions and `venv` virtual environment in VS Code IDE.
         - once virtual environment is setup, install dependencies either through the `CLAP_notebook.ipynb`, or in the streamlit directory with `pip install -r requirements.txt`.
         - you will also need to install streamlit in the virtual environment by running `pip install streamlit`.
-        - it's not required to pre-load data with the notebook, but you can read more about that here. 
+        - it's not required to pre-load data with the notebook, but you can read more about that [below](https://github.com/ajwallacemusic/clap-demo?tab=readme-ov-file#downloading-audio-data). 
         - it is required to have opensearch cluster running in docker with an index called "clap" -- this can easily be done in the notebook.
         - once dependcies are installed and opensearch is running, cd to the `streamlit` directory and run `streamlit run app.py` to start the app.
     
