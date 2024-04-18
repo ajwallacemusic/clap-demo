@@ -5,7 +5,7 @@ This demo app demonstrates how to implement the CLAP model to perform text to au
 ![clap_demo-ezgif com-video-to-gif-converter](https://github.com/ajwallacemusic/clap-demo/assets/24554274/e47f41aa-3ed5-4e8d-8c92-a3cf83699559)
 
 
-### Directories
+## Directories
 - `opensearch_setup/`
     - contains a jupyter notebook that can be used to:
         - install dependencies
@@ -25,7 +25,6 @@ This demo app demonstrates how to implement the CLAP model to perform text to au
         - it is required to have opensearch cluster running in docker with an index called "clap" -- this can easily be done in the notebook.
         - once dependcies are installed and opensearch is running, cd to the `streamlit` directory and run `streamlit run app.py` to start the app.
     
----
 
 ## Downloading Audio Data
 The demo app is setup to accept audio data from 3 audio data sources:
@@ -43,4 +42,4 @@ You should then be able to run the sections of the notebook for processing and b
 
 ---
 
-For more information about CLAP, checkout the github page, the research article, or the hugging face model page.
+For more information about CLAP, checkout the [github page](https://github.com/LAION-AI/CLAP), the [research article](https://arxiv.org/abs/2211.06687), or the [hugging face model page](https://huggingface.co/docs/transformers/main/en/model_doc/clap).
