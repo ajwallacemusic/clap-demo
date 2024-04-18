@@ -19,7 +19,7 @@ def get_label_with_highest_score(input_list):
     return highest_label
 
 def classify_audio(text1, text2, audiofile):
-    y, sr = librosa.load(audiofile)
+    y, _ = librosa.load(audiofile)
     audio_classifier = st.session_state.clap_audio_classifier
     output = audio_classifier(y, candidate_labels=[text1, text2])
 

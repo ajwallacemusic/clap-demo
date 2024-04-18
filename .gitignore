@@ -2,3 +2,4 @@
 .DS_Store
 .python-version
 audio_data/
+*__pycache__*

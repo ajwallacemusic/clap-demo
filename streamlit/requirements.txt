@@ -1,0 +1,7 @@
+transformers 
+opensearch-py 
+librosa 
+torch 
+torchvision 
+torchaudio 
+pyaudio
