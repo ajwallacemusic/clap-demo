@@ -36,7 +36,7 @@ Adding this audio is not required, the app allows recording and indexing user au
 
 These are all available from the [LAION audio set github audio data project](https://github.com/LAION-AI/audio-dataset) (and were used to help train the pretrained CLAP models).
 
-Clone the repo, and simply run the download script for the audio sets (for example, the `download_FUSS.sh` script will download the FUSS audio set). Unzip the downloads and paste the contents into a directory called `audio_data` in the clap-demo directory (same level as `streamlit/` and `opensearch_setup/`.)
+Clone the repo, and simply run the download script for the audio sets (for example, the `download_FUSS.sh` script will download the FUSS audio set). Unzip the downloads and paste the contents into a directory called `audio_data/` in the clap-demo directory (same level as `streamlit/` and `opensearch_setup/`.)
 
 You should then be able to run the sections of the notebook for processing and bulk indexing these audio data sets.
 
