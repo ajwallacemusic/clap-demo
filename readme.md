@@ -2,6 +2,9 @@
 ## Semantic Search on Audio Sources
 This demo app demonstrates how to implement the CLAP model to perform text to audio search, audio label classification and audio to audio search.
 
+![clap_demo-ezgif com-video-to-gif-converter](https://github.com/ajwallacemusic/clap-demo/assets/24554274/e47f41aa-3ed5-4e8d-8c92-a3cf83699559)
+
+
 ### Directories
 - `opensearch_setup/`
     - contains a jupyter notebook that can be used to:
